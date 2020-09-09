@@ -1,0 +1,17 @@
+#header{
+    background-color: black;
+    font-size: 14px;
+    line-height: 1.5;
+    color: hsla(0,0%,100%,.7)
+}
+
+.firstLink {
+    color: white;
+    text-decoration: none;
+    
+}
+
+#bigHeader {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+}
