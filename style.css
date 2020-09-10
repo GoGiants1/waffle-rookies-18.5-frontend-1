@@ -1,17 +1,58 @@
-#header{
+.box-container{
+    display: flex;
     background-color: black;
     font-size: 14px;
     line-height: 1.5;
-    color: hsla(0,0%,100%,.7)
+    color: hsla(0,0%,100%,.7);
+    padding-left: 10px;
+    align-items:center;
+}
+body{
+    margin:0;
 }
 
 .firstLink {
     color: white;
     text-decoration: none;
-    
+    margin-right: 16px!important;
 }
 
-#bigHeader {
-    display: grid;
-    grid-template-columns: 30px 1fr;
+#top-logo{
+    background-color: black;
 }
+#top-right{
+    position: absolute; right: 200px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    color:black;
+    background-color:white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 5x 5px;
+    z-index: 1;
+    text-align: left;
+  }
+
+  .dropdown-text{
+      margin:0;
+      margin-left:3px;
+      padding:8px;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .top-Right-image{
+    margin-right: 16px!important;
+
+    width:25px;
+    height: 25px;
+  }
