@@ -6,11 +6,23 @@
     color: hsla(0,0%,100%,.7);
     padding-left: 10px;
     align-items:center;
+    flex-wrap: nowrap;
 }
 body{
     margin:0;
+    
 }
 
+
+
+
+body {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #24292e;
+  background-color: #fff;
+}
 .firstLink {
     color: white;
     text-decoration: none;
@@ -20,15 +32,19 @@ body{
 #top-logo{
     background-color: black;
 }
-#top-right{
-    position: absolute; right: 200px;
+#top-right{ 
+    margin:0;
+    margin-right: 1em;
+}
+#top-right .box-container{
+  justify-content: end;
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
   }
-  
+  /* right는 오른쪽 기준에서 리스트 튀어나오게 함. */
   .dropdown-content {
     display: none;
     position: absolute;
@@ -37,8 +53,22 @@ body{
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 5x 5px;
-    z-index: 1;
+    z-index: 100;
     text-align: left;
+    white-space: nowrap;
+    right: 0; 
+  }
+  .dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #0366d6;
+    display: block;
   }
 
   .dropdown-text{
@@ -50,9 +80,176 @@ body{
     display: block;
   }
 
-  .top-Right-image{
+  .top-Right-image{ /* 오른쪽 부분 사진*/
     margin-right: 16px!important;
 
     width:25px;
     height: 25px;
   }
+  .profile-image{
+    margin-right: 16px!important;
+
+    width:25px;
+    height: 25px;
+    object-fit: cover; /* 프로필 사진 원형 만들어 주는 코드 2줄*/ 
+    border-radius: 50%;
+  }
+
+  .width-full{
+    width: 100%;
+  }
+
+  .search{
+    display: inline-block;
+    min-width: 17em;
+  }
+  *{
+    box-sizing: border-box;
+  }
+
+  .pding-24-l{
+    padding-left: 24px;
+  }
+
+  
+  .pding-24-r{
+    padding-right: 24px;
+  }
+
+  .div{
+    display: block;
+  }
+
+  .flex-justify-between{
+    justify-content: space-between !important;
+  }
+  
+  .display-f{
+    display: flex;
+  }
+
+  .mt-8{
+    margin-top:8px!important;
+  }
+  .mb-8{
+    margin-bottom:8px!important;
+  }
+
+  .mb-16{
+    margin-bottom: 16px!important;
+  }
+
+  .mt-16 {
+    margin-top: 16px!important;
+  }
+
+  .mt-32{
+    margin-top:32px!important;
+  }
+
+  .mr-16{
+    margin-right:16px!important;
+  }
+  
+  .pt-16{
+    padding-top:16px;
+  }
+
+  .flex-items-center{
+    align-items: center !important;
+  }
+
+  .bold-text{
+    font-weight: 600!important;
+  }
+
+  .font-14px{
+    font-size: 14px !important;
+  }
+
+  .my-link a{
+    text-align: left;
+    text-decoration: none;
+    color: #0366d6;
+  }
+
+  .no-list-style{
+    list-style: none;
+  }
+
+  ol, ul {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.bg-gray{
+  background-color: #f6f8fa!important;
+}
+
+.bg-white{
+  background-color:white;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+.border-right {
+  border-right: 1px solid #e1e4e8!important;
+}
+
+.border-top{
+  border-top: 1px solid #e1e4e8!important;
+}
+.border-left{
+  border-top: 1px solid #e1e4e8!important;
+}
+
+.flex-wrap {
+  flex-wrap: wrap!important;
+}
+
+.flex-auto{
+  flex:auto !important;
+}
+
+.padding-x-16 {
+    padding-right: 16px!important;
+    padding-left: 16px!important;
+}
+
+.padding-y-16 {
+  padding-top: 16px!important;
+  padding-bottom: 16px!important;
+}
+.margin-l-r-auto{
+  margin-left: auto!important;
+  margin-right: auto!important;
+}
+
+.flex-column{
+  flex-direction: column!important;
+}
+
+
+.stretch{
+  align-content: stretch;
+}
+
+.flex-items-baseline{
+  align-items: baseline!important;
+}
+
+.w-h32{
+  width: 32px;
+  height: 32px;
+  object-fit: cover; /* 프로필 사진 원형 만들어 주는 코드 2줄*/ 
+  border-radius: 50%;
+}

@@ -11,12 +11,21 @@
 
 <body>
 
-<div class="box-container">
-    <div id="box">
-        <a href="https://github.com"><img id="top-logo" src="logo.png" width="30px" height="30px"></a>
+<header class="Header box-container">
+    <div>
+        <a href="https://github.com"><img id="top-logo" src="logo.png" width="30px" height="30px" style="margin-right: 1em;"></a>
     </div>
+
+    <div class="search" style="margin-right: 1em;">
+        <input type="text" placeholder="Search or jump to...">
+        <button>search</button>
+    </div>
+
+    <div></div>
     
-    <div class="box-container">
+
+
+    <div class="box-container width-full" > <!-- 상단부 -->
         <a class="firstLink" href="https://github.com/pulls" style="text-decoration:none" color= white>Pull requests</a>
         <a class="firstLink" href="https://github.com/issues">Issues</a>
         <a class="firstLink" href="https://github.com/marketplace">Marketplace</a>
@@ -30,17 +39,95 @@
             <span><img class="top-Right-image" src="plus.png"></span>
             <div class="dropdown-content">
             <p>
-                <ul class="dropdown-text">New repository</ul>
-                <ul class="dropdown-text">Import repository</ul>
-                <ul class="dropdown-text">New gist</ul>
-                <ul class="dropdown-text">New organization</ul>
-                <ul class="dropdown-text">New project</ul>
+                <a href="https://github.com/new"><ul class="dropdown-text">New repository</ul></a>
+                <a href="https://github.com/new/import"><ul class="dropdown-text">Import repository</ul></a>
+                <a href="https://gist.github.com/"><ul class="dropdown-text">New gist</ul></a>
+                <a href="https://github.com/organizations/plan"><ul class="dropdown-text">New organization</ul></a>
+                <a href="https://github.com/new/project"><ul class="dropdown-text">New project</ul></a>
+            </p>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <span><img class="profile-image" src="profile.jpg"></span>
+            <div class="dropdown-content">
+            <p>
+                <a href="https://github.com/GoGiants1"><ul class="dropdown-text">Your profile</ul></a>
+                <a href="https://github.com/GoGiants1?tab=repositories"><ul class="dropdown-text">Your repositories</ul></a>
+                <a href="https://github.com/GoGiants1?tab=projects"><ul class="dropdown-text">Your projects</ul></a>
+                <a href="https://github.com/GoGiants1?tab=stars"><ul class="dropdown-text">Your stars</ul></a>
+                <a href="https://gist.github.com/GoGiants1"><ul class="dropdown-text">Your gists</ul></a>
             </p>
             </div>
         </div>
     </div>
+</header>
+
+<!-- 상단부 아래 메인 부분-->
+<div class="main"> 
+    <!-- 전체 틀 잡는 flex-container --> 
+    <div class="main-container bg-gray display-f" style="min-height: 100vh;"> 
+        <aside class="display-f border-right bg-white" style="max-width: 350px; min-height: 100vh;">
+            <div class="left-sidebar pding-24-l pding-24-r bg-white " style="width:auto; position:static; top:0px !important; left:0px;">
+                <div class="repositories-container flex-justify-between mt-32 mb-16">
+                    <h2 class="flex-justify-between display-f flex-items-center"  style="font-size: 14px!important; margin-top: 0px; margin-bottom: 4px;">Repositories
+                        <a href="https://github.com/new"><button>New</button></a>
+                    </h2>
+                
+                <div class="search mb-16 mt-8">
+                    <input class="width-full" type="text" placeholder="Find a repository">
+                </div>
+
+                <ul class="font-14px my-link bold-text no-list-style">
+                    <li><img src="padlock.png" width="16px" height="16px"><a href="https://github.com/GoGiants1/waffle-rookies-18.5-frontend-1">GoGiants1/waffle-rookies-18.5-frontend-1</a></li>
+                    <li><img src="book.png" width="16px" height="16px"><a href="https://github.com/wafflestudio/rookies">wafflestudio/rookies</a></li>
+                    <li><img src="forked.png" width="16px" height="16px"><a href="https://github.com/GoGiants1/rookies">GoGiants1/rookies</a></li>
+                    <li><img src="forked.png" width="16px" height="16px"><a href="https://github.com/GoGiants1/waffle-git-example">GoGiants1/waffle-git-example</a></li>
+                </ul>
+                </div>
+            
+                <div class="mb-16 mt-16 pt-16 border-top">
+                    <h2 style="font-size:14px;">Working with a team?</h2>
+                    <p style="font-size: 14px; line-height: 1.5;">GitHub is built for collaboration. Set up an organization to improve the way your team works together, and get access to more features.</p>
+                    <a href="https://github.com/account/organizations/new"><button>Create an organization</button></a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- 메인의 센터부분-->
+        <div class="border-bottom mt-16 display-f width-full flex-auto padding-x-16">
+            <div class="flex-column margin-l-r-auto display-f flex-auto" style="max-width:1400px">
+                <main class="flex-auto">
+                    <div class="news-feed">
+                        <div class="news display-f flex-items-baseline padding-y-16">
+                            <span><a href="https://github.com/davin111"><img class="w-h32 mr-16" src="profile1.jpg"></a></span>
+                            <div class="display-f flex-column width-full flex-items-baseline">
+                                <div class="display-f flex-items-baseline">
+                                    <a class="bold-text" href="https://github.com/davin111">davin111</a>
+                                    <span>&nbsppushed to&nbsp</span>
+                                    <a class="bold-text" href="https://github.com/wafflestudio/rookies">wafflestudio/rookies</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </main>
+            </div>
+                
+
+        </div>
+
+    </div>
+    
+
+
+
+
+
 
 </div>
+
+
 </body>
 
 </html>
